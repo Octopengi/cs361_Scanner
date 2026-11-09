@@ -1,0 +1,18 @@
+Public class Declaration {
+	Variable v;
+	Type t;
+}
+
+//Create declaration for int x;
+
+Variable x = new Variable();
+x.id = "x";
+Declaration d = new Declaration();
+d.v = x;
+d.t = new Type();
+d.t
+
+public class Variable {
+	String id;
+}
+
