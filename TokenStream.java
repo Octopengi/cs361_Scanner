@@ -57,8 +57,7 @@ public class TokenStream {
 			if (nextChar == '/') { // If / is followed by another /
 				// skip rest of line - it's a comment.
 				// look for <cr>, <lf>, <ff>
-				
-				//THIS CODE IS FROM GEMINI IF IT DOESN'T WORK IT'S NOT MY FAULT (by Renee Rapp)
+
 				while (!isEof && !isEndOfLine(nextChar)) {
 					nextChar = readChar();
 				}
@@ -84,9 +83,6 @@ public class TokenStream {
 				if (nextChar == '=') {
 					t.setValue(t.getValue() + nextChar);
 					nextChar = readChar();
-					return t;
-				} else {
-					t.setType("Other");
 				}
 				return t;
 			case '>':
@@ -95,9 +91,6 @@ public class TokenStream {
 				if (nextChar == '=') {
 					t.setValue(t.getValue() + nextChar);
 					nextChar = readChar();
-					return t;
-				} else {
-					t.setType("Other");
 				}
 				return t;
 			case '=':
@@ -106,9 +99,6 @@ public class TokenStream {
 				if (nextChar == '=') {
 					t.setValue(t.getValue() + nextChar);
 					nextChar = readChar();
-					return t;
-				} else {
-					t.setType("Other");
 				}
 				return t;
 			case '!':
@@ -117,9 +107,6 @@ public class TokenStream {
 				if (nextChar == '=') {
 					t.setValue(t.getValue() + nextChar);
 					nextChar = readChar();
-					return t;
-				} else {
-					t.setType("Other");
 				}
 				return t;
 			case '|':
