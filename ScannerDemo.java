@@ -5,7 +5,7 @@
 public class ScannerDemo {
 
 	// This needs to be changed !
-	private static String file1 = "E:\\Pace_Classes\\5-Fall_2026\\ProgramingLang_Imp\\10_28\\Coed\\testJay.txt";
+	private static String file1 = "C:\\Users\\Octop\\Documents\\cs361_Scanner\\testJay.txt";
 	// E:\\Pace_Classes\\5-Fall_2026\\ProgrammingLang_Imp\\10_28\\Coed\\
 	private static int counter = 1;
 
